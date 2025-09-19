@@ -10,10 +10,19 @@ const ChatPage = ({ currentLanguage }) => {
   const location = useLocation();
   const navigate = useNavigate();
 
-  // Call your backend ML API
+  // Call your backend ML API with environment detection
   const callHealthAIAPI = async (userMessage) => {
     try {
-      const response = await fetch('/api/rag', {
+      // Use different endpoints for development vs production
+      const isDevelopment = import.meta.env.DEV;
+      
+      const apiUrl = isDevelopment 
+        ? '/api/rag'  // Use proxy in development
+        : '/api/rag';  // Use Vercel serverless function in production
+
+      console.log('API URL:', apiUrl, 'Environment:', isDevelopment ? 'development' : 'production');
+
+      const response = await fetch(apiUrl, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
