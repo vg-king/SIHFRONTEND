@@ -18,7 +18,7 @@ export default async function handler(req, res) {
   }
 
   try {
-    const API_URL = process.env.VITE_API_BASE_URL || 'https://0252c4ece8b3.ngrok-free.app';
+    const API_URL = process.env.VITE_API_BASE_URL || 'https://f3377784e70a.ngrok-free.app';
     
     // Forward the request to your ML backend
     const response = await fetch(`${API_URL}/rag`, {
