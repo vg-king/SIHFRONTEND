@@ -12,7 +12,7 @@ export default defineConfig({
     historyApiFallback: true,
     proxy: {
       '/api': {
-        target: 'https://592ced580b89.ngrok-free.app',
+        target: 'https://0252c4ece8b3.ngrok-free.app',
         changeOrigin: true,
         rewrite: (path) => path.replace(/^\/api/, ''),
         secure: true,
