@@ -223,7 +223,7 @@ const Sidebar = ({ isCollapsed, onToggle, currentLanguage, onLanguageChange, chi
                       />
                     </motion.div>
                     <div>
-                      <h1 className="text-xl font-bold text-slate-800">Health AI</h1>
+                      <h1 className="text-xl font-bold text-slate-800">WELL BOT</h1>
                       <p className="text-xs text-slate-600 flex items-center space-x-1">
                         <Sparkles className="w-3 h-3" />
                         <span>AI-Powered Care</span>
@@ -355,7 +355,7 @@ const Sidebar = ({ isCollapsed, onToggle, currentLanguage, onLanguageChange, chi
                 </motion.div>
                 <div>
                   <h1 className="text-xl font-bold text-slate-800">
-                    Health AI
+                    WELL BOT
                   </h1>
                   <p className="text-xs text-slate-600 flex items-center space-x-1">
                     <Sparkles className="w-3 h-3" />
@@ -478,7 +478,7 @@ const Sidebar = ({ isCollapsed, onToggle, currentLanguage, onLanguageChange, chi
                   <div className="p-2 bg-gradient-to-br from-emerald-600/20 to-teal-600/20 rounded-lg">
                     <Globe className="w-4 h-4 text-emerald-600" />
                   </div>
-                  <span className="text-sm font-semibold text-slate-700">Language</span>
+                  <span className="text-sm font-semibold text-slate-900">Language</span>
                 </div>
                 <select
                   value={currentLanguage}

@@ -17,7 +17,7 @@ const WelcomeScreen = ({ onGetStarted, currentLanguage = 'en' }) => {
   
   const welcomeData = {
     en: {
-      greeting: "Welcome to Health AI 🤖",
+      greeting: "Welcome to WELL BOT 🤖",
       subtitle: "Your AI assistant for preventive care, disease awareness, and vaccination updates",
       description: "Empowering rural and semi-urban communities with accessible healthcare information in your local language.",
       features: [
@@ -52,7 +52,7 @@ const WelcomeScreen = ({ onGetStarted, currentLanguage = 'en' }) => {
       emergency: "For medical emergencies, call your local emergency services immediately"
     },
     hi: {
-      greeting: "स्वास्थ्य AI में आपका स्वागत है 🤖",
+      greeting: "WELL BOT में आपका स्वागत है 🤖",
       subtitle: "निवारक देखभाल, रोग जागरूकता और टीकाकरण अपडेट के लिए आपका AI सहायक",
       description: "स्थानीय भाषा में सुलभ स्वास्थ्य जानकारी के साथ ग्रामीण और अर्ध-शहरी समुदायों को सशक्त बनाना।",
       features: [
